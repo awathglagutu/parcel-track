@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Register</title></head><body>
+<h1>Seller registration</h1>
+<form method="post">{% csrf_token %}{{ form.as_p }}<button type="submit">Register</button></form>
+<p><a href="{% url 'login' %}">Log in</a></p>
+</body></html>
