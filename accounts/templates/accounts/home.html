@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>{{ role }} home</title></head><body>
+<h1>{{ role }} home</h1>
+{% if role == "Admin" %}<p><a href="{% url 'create_rider' %}">Create rider</a></p>{% endif %}
+<form method="post" action="{% url 'logout' %}">{% csrf_token %}<button type="submit">Log out</button></form>
+</body></html>
